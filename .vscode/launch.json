@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ClienteSpringApplication<Cliente-Spring>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.ramon.ClienteSpringApplication",
+            "projectName": "Cliente-Spring",
+            "args": ""
+        }
+    ]
+}
