@@ -1,3 +1,3 @@
-#Crinando o repositório
-1. Cciando uma api Clientes
-2. Crinando projeto Angular
+#Criando o repositório
+1. Criando uma api Clientes
+2. Criando projeto Angular
