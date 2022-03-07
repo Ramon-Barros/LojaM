@@ -1,4 +1,4 @@
-package com.ramon.model;
+package com.ramon.model.entity;
 
 import java.time.LocalDate;
 
@@ -26,5 +26,4 @@ public class Cliente {
 
     @Column(name = "data_cadastro")
     private LocalDate datacadastro;
-
 }

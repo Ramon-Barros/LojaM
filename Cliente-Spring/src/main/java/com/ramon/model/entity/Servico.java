@@ -1,4 +1,4 @@
-package com.ramon.model;
+package com.ramon.model.entity;
 
 import java.math.BigDecimal;
 
@@ -15,7 +15,7 @@ import lombok.Data;
 @Entity
 @Data
 public class Servico {
-
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -30,5 +30,4 @@ public class Servico {
     @Column
     private BigDecimal valor;
 
-    
 }
