@@ -1,4 +1,4 @@
-package com.ramon;
+package com.ramon.model;
 
 import java.time.LocalDate;
 
@@ -23,8 +23,8 @@ public class Cliente {
 
     @Column(nullable = false, length = 11)
     private String cpf;
-    
-    @Column
-    private LocalDate dataCadastro;
+
+    @Column(name = "data_cadastro")
+    private LocalDate datacadastro;
 
 }
