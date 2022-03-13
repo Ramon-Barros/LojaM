@@ -1,4 +1,4 @@
-package com.ramon.model.entity;
+package com.ramon.model.enity;
 
 import java.math.BigDecimal;
 
@@ -11,11 +11,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import lombok.Data;
-
 @Entity
 @Data
 public class Servico {
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -29,5 +27,4 @@ public class Servico {
 
     @Column
     private BigDecimal valor;
-
 }

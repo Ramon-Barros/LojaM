@@ -1,4 +1,4 @@
-package com.ramon.model.entity;
+package com.ramon.model.enity;
 
 import java.time.LocalDate;
 
@@ -9,11 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.Data;
-
 @Entity
 @Data
 public class Cliente {
-    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
