@@ -5,6 +5,7 @@ import com.ramon.model.repository.ClienteRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -36,6 +37,15 @@ public class ClienteController {
     public Cliente acharPorId( @PathVariable Integer id ){
                                                               // para lançar um erro de status
         return repository.findById(id).orElseThrow( ()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
+    }
+
+    @DeleteMapping("{id}")
+    public void deletar( @PathVariable Integer id ){
+        
+            repository.findById(id).map( cliente -> {
+                repository.delete(cliente);
+                return Void.TYPE;
+            }).orElseThrow( ()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
     
 }
